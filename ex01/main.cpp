@@ -2,28 +2,16 @@
 
 int main()
 {
-	Animal* meta = new Animal();
-	Animal* j = new Dog();
-	Animal* i = new Cat();
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
+	Animal*	tab[10];
 
-	WrongAnimal* meto = new WrongAnimal();
-	WrongAnimal* k = new WrongCat();
-	std::cout << k->getType() << " " << std::endl;
-	k->makeSound();
-	meto->makeSound();
-
-
-
-	delete meta;
-	delete meto;
-	delete j;
-	delete k;
-	delete i;
-
-	return (0);
+	for (int x = 0; x ++; x < 5){
+		
+		tab[x] = new Dog();
+	}
+	for	(int x = 5; x++; x < 10){
+		tab[x] = new Cat();
+	}
+	for (int x = 0; x++; x < 10){
+		delete tab[x];
+	}
 }
