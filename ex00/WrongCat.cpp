@@ -1,6 +1,6 @@
 
 
-#include "Animal.hpp"
+#include "WrongCat.hpp"
 
 WrongCat::WrongCat(void){
 
@@ -32,7 +32,7 @@ WrongCat::WrongCat(const WrongCat &type) : WrongAnimal(){
 	return;
 }
 
-void	WrongCat::makeSound(void){
+void	WrongCat::makeSound(void) const{
 
 	std::cout << "Meow Meow" << std::endl;
 	return;

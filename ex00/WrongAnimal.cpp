@@ -1,5 +1,5 @@
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal(void){
 
@@ -37,13 +37,13 @@ WrongAnimal::WrongAnimal(const WrongAnimal &type){
 	return;
 }
 
-void	WrongAnimal::makeSound(void){
+void	WrongAnimal::makeSound(void) const{
 
-	std::cout << "Indistinct crumbling noises in the dark" << std::endl;
+	std::cout << "BZZzz BZZzz im an Animal BZZzz BZZzz not a Dalek !" << std::endl;
 	return;
 }
 
-std::string	WrongAnimal::getType(void){
+std::string	WrongAnimal::getType(void) const{
 	
 	return (this->type);
 }

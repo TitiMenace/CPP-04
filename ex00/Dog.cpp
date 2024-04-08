@@ -1,5 +1,5 @@
 
-#include "Animal.hpp"
+#include "Dog.hpp"
 
 Dog::Dog(void){
 
@@ -30,7 +30,7 @@ Dog::Dog(const Dog &type) : Animal(){
 	return;
 }
 
-void	Dog::makeSound(void){
+void	Dog::makeSound(void) const{
 
 	std::cout << "Woof Woof" << std::endl;
 	return;

@@ -4,11 +4,11 @@ NAME 		= polymorphism
 
 CXX			= c++
 
-CFLAGS		= -Wall -Wextra -Werror -std=c++98
+CFLAGS		= -Wall -Wextra -Werror -g3 -std=c++98
 
-INCLUDES	=  Animal.hpp
+INCLUDES	=  Animal.hpp WrongAnimal.hpp Cat.hpp Dog.hpp WrongCat.hpp Brain.hpp
 
-FILES		= WrongAnimal WrongCat Animal Dog Cat main
+FILES		= WrongAnimal WrongCat Animal Dog Cat Brain main
 
 SRCS		= $(addsuffix .cpp, $(FILES))
 

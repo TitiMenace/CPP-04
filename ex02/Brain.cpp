@@ -19,7 +19,7 @@ Brain&	Brain::operator=(const	Brain	&type){
 	
 	std::cout << "Brain Copy Assignement operator called !" << std::endl;
 
-	for (int x = 0; x < 99; x++){
+	for (int x = 0; x < 100; x++){
 		this->ideas[x] = type.ideas[x];
 	}
 	return (*this);

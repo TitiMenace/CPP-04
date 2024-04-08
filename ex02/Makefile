@@ -6,9 +6,9 @@ CXX			= c++
 
 CFLAGS		= -Wall -Wextra -Werror -std=c++98
 
-INCLUDES	=  Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
+INCLUDES	=  AAnimal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp Brain.hpp
 
-FILES		= WrongAnimal WrongCat Animal Dog Cat main
+FILES		= WrongAnimal WrongCat AAnimal Dog Cat  Brain main
 
 SRCS		= $(addsuffix .cpp, $(FILES))
 
